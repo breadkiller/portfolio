@@ -9,7 +9,7 @@ function App() {
     "main main"
     `}
     >
-      <GridItem area="header">
+      <GridItem area="header" bg="blue.700">
         <Header></Header>
       </GridItem>
       <GridItem area="profile" bg="white">
