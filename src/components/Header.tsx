@@ -7,14 +7,14 @@ const Header = () => {
   return (
     <HStack justifyContent="space-between">
       <HStack>
-        <Image src={logo} boxSize="60px"></Image>
+        <Image src={logo} boxSize="48px"></Image>
         <Text as="b" fontSize="xl">
           b k v o x e l
         </Text>
       </HStack>
       <HStack>
-        <Image src={btn1} boxSize="60px"></Image>
-        <Image src={btn2} boxSize="60px"></Image>
+        <Image src={btn1} boxSize="48px"></Image>
+        <Image src={btn2} boxSize="48px"></Image>
       </HStack>
     </HStack>
   );
