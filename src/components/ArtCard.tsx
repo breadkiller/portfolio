@@ -27,8 +27,8 @@ const ArtCard = ({ art }: Props) => {
     >
       <Image src={art.image}></Image>
       <CardBody>
-        <Heading size="md" color="blue.700">
-          {art.name}
+        <Heading size="sm" color="blue.700">
+          {art.name.toUpperCase()}
         </Heading>
 
         <Text size="sm" color="blue.700">
@@ -37,12 +37,14 @@ const ArtCard = ({ art }: Props) => {
       </CardBody>
       <Divider color="gray.200" />
       <CardFooter>
-        <ButtonGroup spacing="2">
-          <Button variant="solid" colorScheme="blue">
+        <ButtonGroup>
+          <Button
+            variant="solid"
+            color="white"
+            background="blue.700"
+            _hover={{ background: "blue.900" }}
+          >
             Detail
-          </Button>
-          <Button variant="ghost" colorScheme="blue">
-            View NFT
           </Button>
         </ButtonGroup>
       </CardFooter>

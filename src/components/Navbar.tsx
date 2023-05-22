@@ -1,6 +1,5 @@
 import { Stack } from "@chakra-ui/react";
 import NavButton from "./NavButton";
-import { useState } from "react";
 
 const Navbar = () => {
   return (
@@ -19,12 +18,21 @@ const Navbar = () => {
       >
         <NavButton
           children="Portfolio"
-          click={() => console.log("P")}
+          click={() => {
+            console.log("P");
+          }}
         ></NavButton>
-        <NavButton children="Art" click={() => console.log("A")}></NavButton>
+        <NavButton
+          children="Art"
+          click={() => {
+            console.log("A");
+          }}
+        ></NavButton>
         <NavButton
           children="Tutorial"
-          click={() => console.log("T")}
+          click={() => {
+            console.log("T");
+          }}
         ></NavButton>
       </Stack>
     </Stack>
