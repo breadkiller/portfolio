@@ -8,6 +8,8 @@ import {
   CardFooter,
   Button,
   ButtonGroup,
+  VStack,
+  HStack,
 } from "@chakra-ui/react";
 import { Art } from "../hooks/useArt";
 
@@ -27,17 +29,16 @@ const ArtCard = ({ art }: Props) => {
     >
       <Image src={art.image}></Image>
       <CardBody>
-        <Heading size="sm" color="blue.700">
-          {art.name.toUpperCase()}
-        </Heading>
+        <HStack justifyContent="space-between">
+          <VStack align="left">
+            <Heading size="sm" color="blue.700">
+              {art.name.toUpperCase()}
+            </Heading>
 
-        <Text size="sm" color="blue.700">
-          {art.date}
-        </Text>
-      </CardBody>
-      <Divider color="gray.200" />
-      <CardFooter>
-        <ButtonGroup>
+            <Text size="sm" color="blue.700">
+              {art.date}
+            </Text>
+          </VStack>
           <Button
             variant="solid"
             color="white"
@@ -46,8 +47,8 @@ const ArtCard = ({ art }: Props) => {
           >
             Detail
           </Button>
-        </ButtonGroup>
-      </CardFooter>
+        </HStack>
+      </CardBody>
     </Card>
   );
 };
