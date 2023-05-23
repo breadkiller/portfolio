@@ -9,7 +9,7 @@ const Navbar = () => {
         spacing={4}
         justifyContent="center"
         height="48px"
-        width="80%"
+        width={{ base: "80%", xl: "1024px" }}
         borderTop="solid"
         borderLeft="none"
         borderRight="none"

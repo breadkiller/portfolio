@@ -8,7 +8,7 @@ const FeedOfArt = () => {
       <SimpleGrid
         columns={{ base: 1, sm: 2, lg: 3 }}
         spacing="24px"
-        width="80%"
+        width={{ base: "80%", xl: "1024px" }}
       >
         {artData.map((art) => (
           <ArtCard key={art.id} art={art}></ArtCard>

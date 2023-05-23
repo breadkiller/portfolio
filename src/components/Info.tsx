@@ -16,10 +16,10 @@ const Info = () => {
   return (
     <Stack align="center">
       <HStack
-        justifyContent={{ base: "left", lg: "center" }}
+        justifyContent={{ base: "left", xl: "center" }}
         margin="24px"
         overflow="auto"
-        width="80%"
+        width={{ base: "80%", xl: "1024px" }}
       >
         {/* Avatar Image */}
         <Image
