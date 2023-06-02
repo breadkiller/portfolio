@@ -1,19 +1,19 @@
 import { Button } from "@chakra-ui/react";
 
 interface Props {
-  children: string;
+  buttonName: string;
   click: (children: string) => void;
 }
 
-const NavButton = ({ children, click }: Props) => {
+const NavButton = ({ buttonName, click }: Props) => {
   return (
     <Button
       color="blue.700"
       variant="link"
       size="lg"
-      onClick={() => click(children)}
+      onClick={() => click(buttonName)}
     >
-      {children}
+      {buttonName}
     </Button>
   );
 };

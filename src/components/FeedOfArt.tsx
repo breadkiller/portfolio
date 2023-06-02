@@ -1,6 +1,6 @@
 import artData from "../data/artData";
 import { HStack, SimpleGrid } from "@chakra-ui/react";
-import ArtCard from "./ArtCard";
+import CardOfArt from "./CardOfArt";
 
 const FeedOfArt = () => {
   return (
@@ -11,7 +11,7 @@ const FeedOfArt = () => {
         width={{ base: "80%", xl: "1024px" }}
       >
         {artData.map((art) => (
-          <ArtCard key={art.id} art={art}></ArtCard>
+          <CardOfArt key={art.id} art={art}></CardOfArt>
         ))}
       </SimpleGrid>
     </HStack>

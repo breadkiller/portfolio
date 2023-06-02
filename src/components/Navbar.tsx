@@ -1,7 +1,11 @@
 import { Stack } from "@chakra-ui/react";
 import NavButton from "./NavButton";
 
-const Navbar = () => {
+interface Props {
+  navigate: (children: string) => void;
+}
+
+const NavBar = ({ navigate }: Props) => {
   return (
     <Stack align="center">
       <Stack
@@ -17,21 +21,21 @@ const Navbar = () => {
         borderColor="gray.100"
       >
         <NavButton
-          children="Portfolio"
+          buttonName="Portfolio"
           click={() => {
-            console.log("P");
+            navigate("portfolio");
           }}
         ></NavButton>
         <NavButton
-          children="Art"
+          buttonName="Art"
           click={() => {
-            console.log("A");
+            navigate("art");
           }}
         ></NavButton>
         <NavButton
-          children="Tutorial"
+          buttonName="Tutorial"
           click={() => {
-            console.log("T");
+            navigate("tutorial");
           }}
         ></NavButton>
       </Stack>
@@ -39,4 +43,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavBar;

@@ -17,7 +17,7 @@ interface Props {
   art: Art;
 }
 
-const ArtCard = ({ art }: Props) => {
+const CardOfArt = ({ art }: Props) => {
   return (
     <Card
       borderRadius="0px"
@@ -53,4 +53,4 @@ const ArtCard = ({ art }: Props) => {
   );
 };
 
-export default ArtCard;
+export default CardOfArt;
