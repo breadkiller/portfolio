@@ -2,7 +2,7 @@ import FeedOfArt from "./FeedOfArt";
 import FeedOfPortfolio from "./FeedOfPortfolio";
 import FeedOfTutorial from "./FeedOfTutorial";
 
-import NavBar from "./Navbar";
+import NavBar from "./NavBar";
 import { Stack } from "@chakra-ui/react";
 import { useState } from "react";
 
